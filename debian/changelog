@@ -1,0 +1,114 @@
+node-through2 (4.0.2-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Bastien Roucariès ]
+  * Bump standard version
+  * MA foreign
+
+  [ Yadd ]
+  * Replace Leo Iannacone by Yadd, thanks for your work!
+  * Fix GitHub tags regex
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 03 Oct 2021 09:26:09 +0000
+
+node-through2 (4.0.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+  * New upstream version 4.0.2
+  * Require node-readable-stream > 3
+  * Update test, replace tape by mocha
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 02 Nov 2020 14:45:46 +0100
+
+node-through2 (3.0.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 16 Dec 2019 21:55:25 +0100
+
+node-through2 (3.0.1-1) experimental; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * New upstream version 3.0.1
+  * Embed stream-spigot for test only
+  * Switch test and install to pkg-js-tools
+  * Remove test patch
+  * Remove node-xtend from dependencies
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 12 Dec 2019 20:48:30 +0100
+
+node-through2 (2.0.5-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 11
+  * Fix debian/copyright format url
+  * Use readable-stream instead of stream like required by upstream
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 14 Jan 2019 18:51:02 +0100
+
+node-through2 (2.0.5-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.0.5
+  * Section javascript, priority optional
+  * Update Vcs-* fields
+  * Remove Testsuite field
+  * Standards-Version 4.3.0
+  * Honor nocheck
+  * Run test with node-tape:
+    + b-d node-tape, drop node-tap
+    + remove unneeded patch
+  * Patch to fix test deps
+  * Refresh patch for readable-stream
+  * Run testsuite in autopkgtest
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 09 Jan 2019 22:37:12 +0100
+
+node-through2 (2.0.3-1) unstable; urgency=medium
+
+  * Team Upload
+  * New upstream version 2.0.3 (Closes: #845975)
+  * Update copyright to Expat
+  * dh9
+  * Standards-Version 3.9.8
+  * Secure Vcs Url
+  * Testsuite field
+  * Depends node-xtend instead of node-extend
+    + Remove useless patch.
+  * Fix test without stream-spigot module
+  * Fix test without tape module
+  * Test during build
+
+ -- Jérémy Lal <kapouer@melix.org>  Tue, 29 Nov 2016 00:42:35 +0100
+
+node-through2 (1.1.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.1.1
+  * Bump Standards-Version 3.9.6
+  * debian/watch: fix dversionmangle
+  * Use node-extend instead of node-merge-utils,
+    patch updated
+  * Add autopkgtest suite
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Sat, 11 Oct 2014 19:08:09 +0200
+
+node-through2 (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #751784)
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Mon, 16 Jun 2014 18:44:45 +0200

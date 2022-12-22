@@ -1,0 +1,33 @@
+Source: node-through2
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Yadd <yadd@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , chai <!nocheck>
+ , mocha <!nocheck>
+ , node-bl <!nocheck>
+ , node-readable-stream (>= 3) <!nocheck>
+ , node-xtend <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-through2
+Vcs-Git: https://salsa.debian.org/js-team/node-through2.git
+Homepage: https://github.com/rvagg/through2
+Rules-Requires-Root: no
+
+Package: node-through2
+Architecture: all
+Depends: ${misc:Depends}
+ , node-readable-stream (>= 3)
+Multi-Arch: foreign
+Description: Make a stream.Transform out of a function - Node.js module
+ This package provide a tiny wrapper around stream.Transform from
+ Node.js library to avoid explicit subclassing noise.
+ .
+ Inspired by Dominic Tarr's through module in that it's so much easier
+ to make a stream out of a function than it is to set up the prototype
+ chain properly.
+ .
+ Node.js is an event-based server-side JavaScript engine.
